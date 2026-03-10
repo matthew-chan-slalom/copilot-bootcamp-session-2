@@ -10,6 +10,8 @@
     "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
     "start:frontend": "npm run start --workspace=frontend",
     "start:backend": "npm run start --workspace=backend",
+    "lint": "npm run lint --workspace=frontend && npm run lint --workspace=backend",
+    "lint:fix": "npm run lint:fix --workspace=frontend && npm run lint:fix --workspace=backend",
     "test": "npm run test:frontend && npm run test:backend",
     "test:integration": "npm run test:integration --workspace=backend",
     "test:e2e": "npx playwright test",
